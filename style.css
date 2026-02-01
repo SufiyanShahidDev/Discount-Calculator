@@ -236,3 +236,9 @@ header p {
     color: #9ca3af;
     text-align: center;
 }
+
+hr {
+    border: 0;
+    border-top: 1px solid #e5e7eb;
+    margin: 60px 0;
+}
