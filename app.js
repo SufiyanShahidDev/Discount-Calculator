@@ -25,7 +25,7 @@ const products = [
         description: "RGB backlit keys with blue switches for tactile feedback. Compact tenkeyless design.",
         price: 1850,
         rating: 4.7,
-        image: "https://images.unsplash.com/photo-1587829741301-dc798b91add1?w=500&auto=format&fit=crop&q=60"
+        image: "https://images.unsplash.com/photo-1713526211434-0b4c6c9adaa7?q=80&w=1170&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
     },
     {
         id: 4,
@@ -74,7 +74,7 @@ const renderProducts = () => {
                     </div>
                 </div>
             `;
-    }).join(''); 
+    }).join('');
 
     container.innerHTML = productHTML;
 };
