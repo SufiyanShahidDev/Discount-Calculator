@@ -88,8 +88,8 @@ function calculateDiscount() {
     const couponInput = document.getElementById('couponInput').value.toUpperCase().trim();
     const resultBox = document.getElementById('resultDisplay');
 
-    // validation
-    let originaparseFloatlPrice = parseFloat(priceInput);
+    // Validation
+    let originalPrice = parseFloat(priceInput);
     if (isNaN(originalPrice) || originalPrice <= 0) {
         resultBox.style.display = 'block';
         resultBox.className = 'result-box error';
@@ -133,7 +133,7 @@ function calculateDiscount() {
     resultBox.style.display = 'block';
 
     if (isValidCoupon) {
-        resultBox.className = 'result-box';
+        resultBox.className = 'result-box'; // remove error class
         resultBox.innerHTML = `
                 <span class="result-text">Original Price: Rs. ${originalPrice}</span><br>
                 <span class="saved-amount">${discountNote}</span>
